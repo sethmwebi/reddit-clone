@@ -23,7 +23,7 @@ type Props = {
 
 const Post = ({ post }: Props) => {
 	const { data: session } = useSession()
-	const [vote, setVote] = useState<boolean>(undefined)
+	const [vote, setVote] = useState<boolean>()
 
 	const { data, loading } = useQuery(GET_ALL_VOTES_BY_POST_ID, {
 		variables: {
