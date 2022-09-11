@@ -16,6 +16,7 @@ import { useSession } from "next-auth/react"
 import { useQuery, useMutation } from "@apollo/client"
 import { GET_ALL_VOTES_BY_POST_ID } from "../graphql/queries"
 import { ADD_VOTE } from "../graphql/mutations"
+import toast from "react-hot-toast"
 
 type Props = {
 	post: Post;
